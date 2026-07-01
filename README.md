@@ -6,20 +6,6 @@
 
 ---
 
-## 👤 Identitas
-
-| | |
-|---|---|
-| **Nama** | _[Isi Nama Lengkap]_ |
-| **NIM** | _[Isi NIM]_ |
-| **Kelas / Program Studi** | _[Isi Kelas / Prodi]_ |
-| **Fakultas / Universitas** | _[Isi Fakultas / Universitas]_ |
-| **Mata Kuliah** | _[Isi Mata Kuliah]_ |
-| **Dosen Pengampu** | _[Isi Nama Dosen]_ |
-| **Tautan** | GitHub: _[username]_ · Email: _[email]_ |
-
----
-
 ## 📑 Daftar Isi
 1. [Executive Summary](#-executive-summary)
 2. [Latar Belakang & Tujuan](#-latar-belakang--tujuan)
@@ -248,4 +234,4 @@ Penyebabnya mendasar: kosakata TF-IDF hanya dipelajari dari data Inggris, sehing
 Dataset dirilis dengan lisensi **CC BY 4.0**. Kode proyek bebas dipakai untuk keperluan akademik dengan atribusi.
 
 ---
-<div align="center"><sub>Dibuat sebagai tugas Data Mining · <i>[Isi Nama Lengkap] — [Isi NIM]</i></sub></div>
+<div align="center"><sub>Dibuat sebagai tugas Data Mining · <i>[Gede Candra Maha Dharmawan] — [2581711009]</i></sub></div>

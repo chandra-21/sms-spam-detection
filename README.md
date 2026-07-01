@@ -4,6 +4,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue) ![scikit--learn](https://img.shields.io/badge/model-Logistic%20Regression-orange) ![Streamlit](https://img.shields.io/badge/app-Streamlit-red) ![Domain](https://img.shields.io/badge/domain-Text%20Mining-6c5ce7) ![License](https://img.shields.io/badge/license-CC%20BY%204.0-green)
 
+https://github.com/chandra-21/sms-spam-detection.git
 ---
 
 ## 📑 Daftar Isi

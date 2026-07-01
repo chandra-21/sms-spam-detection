@@ -234,4 +234,4 @@ Penyebabnya mendasar: kosakata TF-IDF hanya dipelajari dari data Inggris, sehing
 Dataset dirilis dengan lisensi **CC BY 4.0**. Kode proyek bebas dipakai untuk keperluan akademik dengan atribusi.
 
 ---
-<div align="center"><sub>Dibuat sebagai tugas Data Mining · <i>[Gede Candra Maha Dharmawan] — [2581711009]</i></sub></div>
+<div align="center"><sub>Dibuat sebagai tugas Manajemen Data · <i>[Gede Candra Maha Dharmawan] — [2581711009]</i></sub></div>

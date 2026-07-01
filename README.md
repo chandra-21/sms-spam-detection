@@ -24,11 +24,11 @@
 
 ## 📄 Executive Summary
 
-**Masalah.** Spam SMS bukan sekadar gangguan — ia kerap menjadi pintu masuk penipuan (*smishing*): tautan palsu, undian bohong, dan pencurian data. Menyaringnya secara manual tidak praktis karena volumenya besar dan polanya terus berubah.
+**Masalah.** Spam SMS bukan sekadar gangguan ia kerap menjadi pintu masuk penipuan (*smishing*): tautan palsu, undian bohong, dan pencurian data. Menyaringnya secara manual tidak praktis karena volumenya besar dan polanya terus berubah.
 
 **Solusi.** Proyek ini melatih **satu model machine learning** yang membaca isi SMS dan memutuskan apakah pesan itu spam. Model belajar dari 5.572 pesan nyata, menemukan sendiri pola bahasa pembeda spam dari percakapan biasa, lalu memberi prediksi disertai skor keyakinan.
 
-**Cara kerja ringkas.** Teks mentah diubah menjadi angka lewat **TF-IDF** (pembobotan kata khas), lalu **Logistic Regression** mempelajari kata mana yang menandai spam. Ini alur *text mining* klasik — cabang sah dari data mining.
+**Cara kerja ringkas.** Teks mentah diubah menjadi angka lewat **TF-IDF** (pembobotan kata khas), lalu **Logistic Regression** mempelajari kata mana yang menandai spam. Ini alur *text mining* klasik cabang sah dari data mining.
 
 **Hasil utama.** Pada data uji yang belum pernah dilihat model:
 
@@ -45,7 +45,7 @@
 
 ## 🎯 Latar Belakang & Tujuan
 
-Layanan SMS masih dipakai luas untuk OTP, notifikasi bank, dan komunikasi pribadi — sekaligus menjadi kanal favorit pelaku penipuan. Filter berbasis aturan (mis. blokir kata tertentu) mudah dielakkan karena pelaku terus mengganti kata. Pendekatan **pembelajaran dari data** lebih adaptif karena model menangkap pola statistik, bukan aturan kaku.
+Layanan SMS masih dipakai luas untuk OTP, notifikasi bank, dan komunikasi pribadi sekaligus menjadi kanal favorit pelaku penipuan. Filter berbasis aturan (mis. blokir kata tertentu) mudah dielakkan karena pelaku terus mengganti kata. Pendekatan **pembelajaran dari data** lebih adaptif karena model menangkap pola statistik, bukan aturan kaku.
 
 **Tujuan proyek:**
 1. Mendemonstrasikan siklus data mining lengkap pada dataset teks publik yang bersih.
@@ -93,7 +93,7 @@ Pesan spam cenderung **jauh lebih panjang** (rata-rata ~139 vs ~71 karakter) kar
 ![Word cloud](assets/03_wordclouds.png)
 
 ### Kenapa Logistic Regression?
-Dua baseline teks klasik dibandingkan lewat validasi silang 5-fold. Keduanya kuat, namun **Logistic Regression** dipilih karena F1 stabil, precision/recall seimbang, dan koefisiennya langsung dapat diinterpretasi — penting untuk fitur transparansi di aplikasi.
+Dua baseline teks klasik dibandingkan lewat validasi silang 5-fold. Keduanya kuat, namun **Logistic Regression** dipilih karena F1 stabil, precision/recall seimbang, dan koefisiennya langsung dapat diinterpretasi penting untuk fitur transparansi di aplikasi.
 
 ![Perbandingan model](assets/04_model_comparison.png)
 
@@ -126,7 +126,7 @@ Pada data uji (1.115 pesan), model mencapai **spam-F1 ~0,92**, **akurasi ~0,98**
 
 ## 💡 Interpretasi & Insight
 
-Membaca koefisien model mengungkap pola yang **jelas dan masuk akal** — inilah "kejadian data mining" yang sesungguhnya: model tidak dihafalkan aturan, melainkan **menemukan sendiri** ciri pembeda.
+Membaca koefisien model mengungkap pola yang **jelas dan masuk akal** inilah "kejadian data mining" yang sesungguhnya: model tidak dihafalkan aturan, melainkan **menemukan sendiri** ciri pembeda.
 
 ![Kata pemicu](assets/08_top_words.png)
 
@@ -175,11 +175,11 @@ Unggah repo ke GitHub → hubungkan di [share.streamlit.io](https://share.stream
 
 ```
 sms-spam-detection/
-├── sms_spam_training.ipynb    # Notebook Colab: pipeline + semua visual
-├── app.py                     # Aplikasi web Streamlit "Smish"
-├── sms_spam_model.joblib      # Artefak model (~108 KB, dari notebook)
-├── requirements.txt           # Dependensi
-├── assets/                    # Grafik hasil training (untuk README)
+├── sms_spam_training.ipynb    
+├── app.py                     
+├── sms_spam_model.joblib      
+├── requirements.txt          
+├── assets/                    
 │   ├── 01_class_distribution.png
 │   ├── 02_message_length.png
 │   ├── 03_wordclouds.png

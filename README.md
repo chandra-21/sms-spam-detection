@@ -1,4 +1,4 @@
-# 📱 SMS Spam Detection — Text Mining Project
+# SMS Spam Detection — Text Mining Project
 
 > Klasifikasi otomatis pesan SMS menjadi **spam** atau **ham (sah)** menggunakan *machine learning*, lengkap dengan aplikasi web interaktif yang menampilkan prediksi **beserta alasannya**.
 
@@ -7,7 +7,7 @@
 https://github.com/chandra-21/sms-spam-detection.git
 ---
 
-## 📑 Daftar Isi
+## Daftar Isi
 1. [Executive Summary](#-executive-summary)
 2. [Latar Belakang & Tujuan](#-latar-belakang--tujuan)
 3. [Dataset](#-dataset)
@@ -23,7 +23,7 @@ https://github.com/chandra-21/sms-spam-detection.git
 
 ---
 
-## 📄 Executive Summary
+## Executive Summary
 
 **Masalah.** Spam SMS bukan sekadar gangguan ia kerap menjadi pintu masuk penipuan (*smishing*): tautan palsu, undian bohong, dan pencurian data. Menyaringnya secara manual tidak praktis karena volumenya besar dan polanya terus berubah.
 
@@ -44,7 +44,7 @@ https://github.com/chandra-21/sms-spam-detection.git
 
 ---
 
-## 🎯 Latar Belakang & Tujuan
+## Latar Belakang & Tujuan
 
 Layanan SMS masih dipakai luas untuk OTP, notifikasi bank, dan komunikasi pribadi sekaligus menjadi kanal favorit pelaku penipuan. Filter berbasis aturan (mis. blokir kata tertentu) mudah dielakkan karena pelaku terus mengganti kata. Pendekatan **pembelajaran dari data** lebih adaptif karena model menangkap pola statistik, bukan aturan kaku.
 
@@ -55,7 +55,7 @@ Layanan SMS masih dipakai luas untuk OTP, notifikasi bank, dan komunikasi pribad
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 **SMS Spam Collection** — UCI Machine Learning Repository (ID 228), dikumpulkan oleh Almeida & Gómez Hidalgo (2011).
 
@@ -78,7 +78,7 @@ Pesan spam cenderung **jauh lebih panjang** (rata-rata ~139 vs ~71 karakter) kar
 
 ---
 
-## 🔬 Metodologi (Alur Text Mining)
+## Metodologi (Alur Text Mining)
 
 | Tahap | Yang dilakukan |
 |---|---|
@@ -103,7 +103,7 @@ Dua baseline teks klasik dibandingkan lewat validasi silang 5-fold. Keduanya kua
 
 ---
 
-## 📈 Hasil & Visualisasi
+## Hasil & Visualisasi
 
 Pada data uji (1.115 pesan), model mencapai **spam-F1 ~0,92**, **akurasi ~0,98**, dan **ROC-AUC ~0,99**.
 
@@ -125,7 +125,7 @@ Pada data uji (1.115 pesan), model mencapai **spam-F1 ~0,92**, **akurasi ~0,98**
 
 ---
 
-## 💡 Interpretasi & Insight
+## Interpretasi & Insight
 
 Membaca koefisien model mengungkap pola yang **jelas dan masuk akal** inilah "kejadian data mining" yang sesungguhnya: model tidak dihafalkan aturan, melainkan **menemukan sendiri** ciri pembeda.
 
@@ -138,7 +138,7 @@ Spam pada dasarnya "berteriak" mengajak bertransaksi dan menghubungi nomor pende
 
 ---
 
-## 🖥️ Aplikasi Web ("Smish")
+## Aplikasi Web ("Smish")
 
 Aplikasi **Streamlit** yang mengubah model menjadi alat siap pakai:
 
@@ -152,7 +152,7 @@ Prinsip desainnya: keputusan model harus **transparan**, bukan kotak hitam.
 
 ---
 
-## 🚀 Cara Menjalankan
+## Cara Menjalankan
 
 ### 1 · Melatih model (Google Colab)
 1. Buka `sms_spam_training.ipynb` di [Google Colab](https://colab.research.google.com/).
@@ -172,7 +172,7 @@ Unggah repo ke GitHub → hubungkan di [share.streamlit.io](https://share.stream
 
 ---
 
-## 📂 Struktur Proyek
+## Struktur Proyek
 
 ```
 sms-spam-detection/
@@ -195,7 +195,7 @@ sms-spam-detection/
 
 ---
 
-## ⚠️ Keterbatasan
+## Keterbatasan
 
 **1. Hanya untuk bahasa Inggris.** Model dilatih pada SMS berbahasa Inggris, jadi performanya turun drastis pada bahasa lain. Pengujian pada spam **berbahasa Indonesia** menunjukkan sebagian besar **lolos** — model hanya menangkapnya bila kebetulan ada token universal (mis. `www`, `.com`, angka). Contoh hasil uji:
 
@@ -214,7 +214,7 @@ Penyebabnya mendasar: kosakata TF-IDF hanya dipelajari dari data Inggris, sehing
 
 ---
 
-## 🔭 Pengembangan Lanjutan (Future Work)
+## Pengembangan Lanjutan (Future Work)
 
 **A. Dukungan bahasa Indonesia (native).** Melatih ulang pipeline yang sama pada **dataset SMS Indonesia** (mis. dataset Yudi Wibisono/UPI, 1.143 pesan, kelas *normal / penipuan / promo*, lisensi CC). Ini solusi paling kokoh dan memberi output **multikelas** yang lebih berguna.
 
@@ -226,12 +226,12 @@ Penyebabnya mendasar: kosakata TF-IDF hanya dipelajari dari data Inggris, sehing
 
 ---
 
-## 📚 Referensi
+## Referensi
 
 - Almeida, T. A., Gómez Hidalgo, J. M., & Yamakami, A. (2011). *Contributions to the Study of SMS Spam Filtering: New Collection and Results.* Proceedings of the 2011 ACM Symposium on Document Engineering (DOCENG).
 - SMS Spam Collection — UCI Machine Learning Repository (ID 228): <https://archive.ics.uci.edu/dataset/228/sms+spam+collection>
 
-## 📝 Lisensi
+## Lisensi
 Dataset dirilis dengan lisensi **CC BY 4.0**. Kode proyek bebas dipakai untuk keperluan akademik dengan atribusi.
 
 ---
